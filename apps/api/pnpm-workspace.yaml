@@ -1,0 +1,12 @@
+allowBuilds:
+  '@parcel/watcher': false
+  '@prisma/client': set this to true or false
+  '@prisma/engines': set this to true or false
+  bcrypt: set this to true or false
+  esbuild: false
+  prisma: set this to true or false
+  unrs-resolver: false
+  workerd: false
+permissions:
+  prisma:
+    skills: false
