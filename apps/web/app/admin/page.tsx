@@ -39,7 +39,7 @@ export default function AdminPage() {
       <div className="max-w-5xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <div>
-            <h1 className="text-3xl font-bold text-gray-900">🛡️ Admin Dashboard</h1>
+            <h1 className="text-3xl font-bold text-gray-900">🛡️ Land Secure Uganda Admin</h1>
             <p className="text-gray-600 mt-1">Review and approve pending KYC applications.</p>
           </div>
           <a href="/" className="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg hover:bg-gray-300 transition font-medium">← Back to Home</a>
