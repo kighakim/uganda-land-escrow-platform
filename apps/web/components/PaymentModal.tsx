@@ -29,7 +29,7 @@ export default function PaymentModal({ transactionId, amount, titleNumber, onClo
     setStep("processing");
     try {
       // Call backend to actually lock the funds in the database
-      const res = await fetch(`http://localhost:3000/transactions/${transactionId}/lock-funds`, {
+      const res = await fetch(`https://uganda-land-api.onrender.com/transactions/${transactionId}/lock-funds`, {
         method: "PATCH",
       });
       

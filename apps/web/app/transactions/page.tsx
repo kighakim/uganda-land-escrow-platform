@@ -10,7 +10,7 @@ export default function TransactionsPage() {
   useEffect(() => {
     async function loadTransactions() {
       try {
-        const res = await fetch("http://localhost:3000/transactions");
+        const res = await fetch("https://uganda-land-api.onrender.com/transactions");
         if (!res.ok) throw new Error("Failed to fetch");
         const data = await res.json();
         setTransactions(data);

@@ -57,7 +57,7 @@ export default function InitiateButton({ listingId, sellerId, priceUgx, titleNum
     }
 
     try {
-      const res = await fetch("http://localhost:3000/transactions/initiate", {
+      const res = await fetch("https://uganda-land-api.onrender.com/transactions/initiate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ listingId, sellerId, buyerId: user.id, totalAmount: priceUgx }),

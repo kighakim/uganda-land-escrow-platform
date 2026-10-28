@@ -12,7 +12,7 @@ export default function AdminPage() {
 
   const loadPendingUsers = async () => {
     try {
-      const res = await fetch("http://localhost:3000/admin/users/pending");
+      const res = await fetch("https://uganda-land-api.onrender.com/admin/users/pending");
       const data = await res.json();
       setUsers(data);
     } catch (err) {
@@ -24,7 +24,7 @@ export default function AdminPage() {
 
   const handleApprove = async (userId: string) => {
     try {
-      const res = await fetch(`http://localhost:3000/admin/users/${userId}/approve`, { method: "PATCH" });
+      const res = await fetch(`https://uganda-land-api.onrender.com/admin/users/${userId}/approve`, { method: "PATCH" });
       if (res.ok) {
         setUsers(users.filter(u => u.id !== userId));
         alert("User KYC Approved Successfully!");

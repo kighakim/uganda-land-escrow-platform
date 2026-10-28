@@ -14,7 +14,7 @@ export default function Home() {
     const storedUser = localStorage.getItem("user");
     if (storedUser) setUser(JSON.parse(storedUser));
 
-    fetch("http://localhost:3000/listings")
+    fetch("https://uganda-land-api.onrender.com/listings")
       .then((res) => res.json())
       .then((data) => setListings(Array.isArray(data) ? data : []))
       .catch((err) => console.error("Backend not running?", err));
