@@ -36,6 +36,7 @@ export declare class TransactionController {
             createdAt: Date;
             updatedAt: Date;
             status: import("@prisma/client").$Enums.ListingStatus;
+            dealerId: string;
             titleNumber: string;
             tenureType: string;
             sizeAcres: import("@prisma/client/runtime/library").Decimal;
@@ -46,7 +47,6 @@ export declare class TransactionController {
             boundaryGeoJson: import("@prisma/client/runtime/library").JsonValue | null;
             titleDocUrl: string | null;
             searchReportUrl: string | null;
-            dealerId: string;
         };
     } & {
         id: string;

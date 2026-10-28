@@ -7,6 +7,7 @@ export declare class ListingService {
         createdAt: Date;
         updatedAt: Date;
         status: import("@prisma/client").$Enums.ListingStatus;
+        dealerId: string;
         titleNumber: string;
         tenureType: string;
         sizeAcres: import("@prisma/client/runtime/library").Decimal;
@@ -17,13 +18,13 @@ export declare class ListingService {
         boundaryGeoJson: import("@prisma/client/runtime/library").JsonValue | null;
         titleDocUrl: string | null;
         searchReportUrl: string | null;
-        dealerId: string;
     }>;
     findAll(): Promise<{
         id: string;
         createdAt: Date;
         updatedAt: Date;
         status: import("@prisma/client").$Enums.ListingStatus;
+        dealerId: string;
         titleNumber: string;
         tenureType: string;
         sizeAcres: import("@prisma/client/runtime/library").Decimal;
@@ -34,13 +35,13 @@ export declare class ListingService {
         boundaryGeoJson: import("@prisma/client/runtime/library").JsonValue | null;
         titleDocUrl: string | null;
         searchReportUrl: string | null;
-        dealerId: string;
     }[]>;
     findOne(id: string): Promise<{
         id: string;
         createdAt: Date;
         updatedAt: Date;
         status: import("@prisma/client").$Enums.ListingStatus;
+        dealerId: string;
         titleNumber: string;
         tenureType: string;
         sizeAcres: import("@prisma/client/runtime/library").Decimal;
@@ -51,13 +52,13 @@ export declare class ListingService {
         boundaryGeoJson: import("@prisma/client/runtime/library").JsonValue | null;
         titleDocUrl: string | null;
         searchReportUrl: string | null;
-        dealerId: string;
     } | null>;
     update(id: string, updateListingDto: any): Promise<{
         id: string;
         createdAt: Date;
         updatedAt: Date;
         status: import("@prisma/client").$Enums.ListingStatus;
+        dealerId: string;
         titleNumber: string;
         tenureType: string;
         sizeAcres: import("@prisma/client/runtime/library").Decimal;
@@ -68,13 +69,13 @@ export declare class ListingService {
         boundaryGeoJson: import("@prisma/client/runtime/library").JsonValue | null;
         titleDocUrl: string | null;
         searchReportUrl: string | null;
-        dealerId: string;
     }>;
     remove(id: string): Promise<{
         id: string;
         createdAt: Date;
         updatedAt: Date;
         status: import("@prisma/client").$Enums.ListingStatus;
+        dealerId: string;
         titleNumber: string;
         tenureType: string;
         sizeAcres: import("@prisma/client/runtime/library").Decimal;
@@ -85,6 +86,5 @@ export declare class ListingService {
         boundaryGeoJson: import("@prisma/client/runtime/library").JsonValue | null;
         titleDocUrl: string | null;
         searchReportUrl: string | null;
-        dealerId: string;
     }>;
 }
